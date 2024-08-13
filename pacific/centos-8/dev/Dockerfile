@@ -9,7 +9,7 @@ RUN rm -rf /etc/yum.repos.d/*.repo* \
     && dnf install -y kernel-headers zlib zlib-devel bzip2-devel openssl-devel \
        sqlite-devel readline-devel python2-devel python36-devel python38-devel python2-jinja2 \
        python3-jinja2 python38-jinja2 git bc doxygen nginx snappy csnappy csnappy-devel libffi \
-       libffi-devel sshpass createrepo jsonnet nodejs \
+       libffi-devel createrepo jsonnet nodejs \
     && dnf reinstall -y kernel-headers glibc-headers csnappy-devel snappy csnappy-devel rpm-build rpmdevtools \
     && rm -rf /etc/localtime \
     && ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
@@ -23,6 +23,8 @@ RUN source /root/.bashrc \
     && wget https://www.python.org/ftp/python/3.8.16/Python-3.8.16.tar.xz -O /root/.pyenv/cache/Python-3.8.16.tar.xz \
     && pyenv install 3.6.15 3.8.16 \
     && pyenv global 3.8.16 \
+    && rm -rf /root/.pyenv/cache/Python-3.6.15.tar.xz \
+    && rm -rf /root/.pyenv/cache/Python-3.8.16.tar.xz \
     && pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple \
     && pip config set install.trusted-host https://pypi.tuna.tsinghua.edu.cn \
     && pip install pip setuptools wheel Cython IPy boto boto3 xmltodict jwt prettytable --upgrade \

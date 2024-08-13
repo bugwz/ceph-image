@@ -107,11 +107,3 @@ baseurl=https://mirrors.aliyun.com/centos-vault/8.5.2111/centosplus/Source/
         https://mirrors.ustc.edu.cn/centos-vault/8.5.2111/centosplus/Source/
 enabled=0
 gpgcheck=0
-
-[Storage]
-name=CentOS-8.5.2111 - Storage - aliyun,tsinghua,ustc
-baseurl=https://mirrors.aliyun.com/centos-vault/8.5.2111/storage/$basearch/ceph-pacific/
-        https://mirrors.tuna.tsinghua.edu.cn/centos-vault/8.5.2111/storage/$basearch/ceph-pacific/
-        https://mirrors.ustc.edu.cn/centos-vault/8.5.2111/storage/$basearch/ceph-pacific/
-enabled=1
-gpgcheck=0
