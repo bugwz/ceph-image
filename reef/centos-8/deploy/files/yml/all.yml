@@ -1,0 +1,57 @@
+---
+dummy:
+
+# common
+configure_firewall: false
+public_network: $NETWORK_SEGMENT
+cluster_network: "{{ public_network }}"
+cephx: true
+
+# ceph repo
+ceph_origin: repository
+ceph_repository: custom
+ceph_custom_repo: http://$YUM_SERVER_ADDRESS/ceph-custom.repo
+
+# monitor
+monitor_interface: $NETWORK_INTERFACE
+
+# osd
+osd_objectstore: bluestore
+
+# radosgw
+radosgw_frontend_type: beast
+radosgw_interface: $NETWORK_INTERFACE
+radosgw_frontend_port: 8080
+
+# dashboard
+dashboard_enabled: true
+dashboard_network: "{{ public_network }}"
+dashboard_port: 8443
+dashboard_protocol: http
+dashboard_admin_user: cephadmin
+dashboard_admin_password: cephpassword
+grafana_datasource: Dashboard1
+
+# grafana
+grafana_container_image: "docker.io/grafana/grafana:9.5.7"
+grafana_network: "{{ public_network }}"
+grafana_port: 3000
+grafana_admin_user: cephadmin
+grafana_admin_password: cephpassword
+grafana_plugins: []
+
+# prometheus
+prometheus_container_image: "docker.io/prom/prometheus:v2.44.0"
+prometheus_port: 9092
+
+# alertmanager
+alertmanager_container_image: "docker.io/prom/alertmanager:v0.25.0"
+alertmanager_port: 9093
+alertmanager_cluster_port: 9094
+
+# node_exporter
+node_exporter_container_image: "docker.io/prom/node-exporter:v1.6.0"
+node_exporter_port: 9100
+
+# other
+centos_package_dependencies: []
