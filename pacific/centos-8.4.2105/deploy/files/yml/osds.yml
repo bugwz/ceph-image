@@ -1,0 +1,5 @@
+---
+dummy:
+devices:
+  - /dev/sdx1
+  - /dev/sdx2
