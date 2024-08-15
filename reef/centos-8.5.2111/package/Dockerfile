@@ -1,4 +1,4 @@
-FROM roboxes/centos8:4.3.14 as builder
+FROM docker.io/roboxes/centos8:4.3.14 as builder
 ARG CEPH_VERSION=reef
 COPY files /tmp/
 RUN rm -rf /etc/yum.repos.d/*.repo* \
