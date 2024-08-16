@@ -1,0 +1,123 @@
+[AppStream]
+name=CentOS-8.4.2105 - AppStream - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos-vault/8.4.2105/AppStream/$basearch/os/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-vault/8.4.2105/AppStream/$basearch/os/
+        https://mirrors.ustc.edu.cn/centos-vault/8.4.2105/AppStream/$basearch/os/
+enabled=1
+gpgcheck=0
+priority=1
+
+[BaseOS]
+name=CentOS-8.4.2105 - BaseOS - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos-vault/8.4.2105/BaseOS/$basearch/os/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-vault/8.4.2105/BaseOS/$basearch/os/
+        https://mirrors.ustc.edu.cn/centos-vault/8.4.2105/BaseOS/$basearch/os/
+enabled=1
+gpgcheck=0
+priority=1
+
+[ContinuousRelease]
+name=CentOS-8.4.2105 - ContinuousRelease - aliyun
+baseurl=https://mirrors.aliyun.com/centos-vault/8.4.2105/cr/$basearch/os/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-vault/8.4.2105/cr/$basearch/os/
+        https://mirrors.ustc.edu.cn/centos-vault/8.4.2105/cr/$basearch/os/
+enabled=0
+gpgcheck=0
+priority=1
+
+[Debuginfo]
+name=CentOS-8.4.2105 - Debuginfo - aliyun
+baseurl=https://mirrors.aliyun.com/centos-debuginfo/8/$basearch/
+enabled=0
+gpgcheck=0
+priority=1
+
+[Devel]
+name=CentOS-8.4.2105 - Devel - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos-vault/8.4.2105/Devel/$basearch/os/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-vault/8.4.2105/Devel/$basearch/os/
+        https://mirrors.ustc.edu.cn/centos-vault/8.4.2105/Devel/$basearch/os/
+enabled=0
+gpgcheck=0
+priority=1
+
+[Extras]
+name=CentOS-8.4.2105 - Extras - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos-vault/8.4.2105/extras/$basearch/os/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-vault/8.4.2105/extras/$basearch/os/
+        https://mirrors.ustc.edu.cn/centos-vault/8.4.2105/extras/$basearch/os/
+enabled=1
+gpgcheck=0
+priority=1
+
+[FastTrack]
+name=CentOS-8.4.2105 - FastTrack - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos-vault/8.4.2105/fasttrack/$basearch/os/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-vault/8.4.2105/fasttrack/$basearch/os/
+        https://mirrors.ustc.edu.cn/centos-vault/8.4.2105/fasttrack/$basearch/os/
+enabled=0
+gpgcheck=0
+priority=1
+
+[HighAvailability]
+name=CentOS-8.4.2105 - HighAvailability - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos-vault/8.4.2105/HighAvailability/$basearch/os/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-vault/8.4.2105/HighAvailability/$basearch/os/
+        https://mirrors.ustc.edu.cn/centos-vault/8.4.2105/HighAvailability/$basearch/os/
+enabled=0
+gpgcheck=0
+priority=1
+
+[Plus]
+name=CentOS-8.4.2105 - Plus - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos-vault/8.4.2105/centosplus/$basearch/os/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-vault/8.4.2105/centosplus/$basearch/os/
+        https://mirrors.ustc.edu.cn/centos-vault/8.4.2105/centosplus/$basearch/os/
+enabled=0
+gpgcheck=0
+priority=1
+
+[PowerTools]
+name=CentOS-8.4.2105 - PowerTools - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos-vault/8.4.2105/PowerTools/$basearch/os/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-vault/8.4.2105/PowerTools/$basearch/os/
+        https://mirrors.ustc.edu.cn/centos-vault/8.4.2105/PowerTools/$basearch/os/
+enabled=1
+gpgcheck=0
+priority=1
+
+[BaseOS-Source]
+name=CentOS-8.4.2105 - BaseOS-Source - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos-vault/8.4.2105/BaseOS/$basearch/Source/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-vault/8.4.2105/BaseOS/$basearch/Source/
+        https://mirrors.ustc.edu.cn/centos-vault/8.4.2105/BaseOS/$basearch/Source/
+enabled=0
+gpgcheck=0
+priority=1
+
+[AppStream-Source]
+name=CentOS-8.4.2105 - AppStream-Source - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos-vault/8.4.2105/AppStream/Source/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-vault/8.4.2105/AppStream/Source/
+        https://mirrors.ustc.edu.cn/centos-vault/8.4.2105/AppStream/Source/
+enabled=0
+gpgcheck=0
+priority=1
+
+[Extras-Source]
+name=CentOS-8.4.2105 - Extras-Source - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos-vault/8.4.2105/extras/Source/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-vault/8.4.2105/extras/Source/
+        https://mirrors.ustc.edu.cn/centos-vault/8.4.2105/extras/Source/
+enabled=0
+gpgcheck=0
+priority=1
+
+[Plus-Source]
+name=CentOS-8.4.2105 - Plus-Source - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos-vault/8.4.2105/centosplus/Source/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-vault/8.4.2105/centosplus/Source/
+        https://mirrors.ustc.edu.cn/centos-vault/8.4.2105/centosplus/Source/
+enabled=0
+gpgcheck=0
+priority=1
