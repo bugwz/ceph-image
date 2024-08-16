@@ -39,7 +39,7 @@ RUN cd /root/ \
     && source /root/.bashrc \
     && /root/ceph/do_cmake.sh \
     && cd /root/ceph/build/ \
-    && ninja
+    && ninja -j "$(expr $(nproc) / 2)"
 
 FROM scratch
 COPY --from=builder / /

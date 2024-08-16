@@ -39,7 +39,7 @@ RUN cd /root/ \
     && export FOR_MAKE_CHECK=true; /root/ceph/install-deps.sh \
     && /root/ceph/do_cmake.sh \
     && cd /root/ceph/build/ \
-    && ninja
+    && ninja -j "$(expr $(nproc) / 2)"
 
 FROM scratch
 COPY --from=builder / /
