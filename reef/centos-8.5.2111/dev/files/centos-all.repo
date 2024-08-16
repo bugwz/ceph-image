@@ -24,7 +24,7 @@ gpgcheck=0
 
 [Debuginfo]
 name=CentOS-8.5.2111 - Debuginfo - aliyun
-baseurl=https://mirrors.aliyun.com/centos-debuginfo/8.5.2111/$basearch/
+baseurl=https://mirrors.aliyun.com/centos-debuginfo/8/$basearch/
 enabled=0
 gpgcheck=0
 
