@@ -6,7 +6,7 @@
 
 `ceph-image` 是一个用于构建 Ceph 的 Docker 镜像的项目。
 
- **简体中文** · [English](./README.en.md)
+ **简体中文** · [English](./README-en.md)
 
 </div>
 
