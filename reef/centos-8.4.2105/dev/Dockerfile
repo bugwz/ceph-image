@@ -3,13 +3,14 @@ ARG CEPH_VERSION=reef
 COPY files /tmp/
 RUN rm -rf /etc/yum.repos.d/*.repo* \
     && mv /tmp/centos-all.repo /etc/yum.repos.d/ \
+    && mv /tmp/centos-stream-all.repo /etc/yum.repos.d/ \
     && mv /tmp/epel-all.repo /etc/yum.repos.d/ \
     && dnf clean all \
     && dnf groupinstall -y 'development tools' \
     && dnf install -y kernel-headers zlib zlib-devel bzip2-devel openssl-devel \
        sqlite-devel readline-devel python2-devel python36-devel python38-devel python2-jinja2 \
        python3-jinja2 python38-jinja2 git bc doxygen nginx snappy csnappy csnappy-devel libffi \
-       libffi-devel createrepo jsonnet nodejs wget xz xz-delvel libmodulemd-2.13.0 \
+       libffi-devel createrepo jsonnet nodejs wget xz xz-delvel libmodulemd-2.13.0 gcc-toolset-11 \
     && dnf reinstall -y kernel-headers glibc-headers csnappy-devel snappy csnappy-devel rpm-build rpmdevtools \
     && rm -rf /etc/localtime \
     && ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
