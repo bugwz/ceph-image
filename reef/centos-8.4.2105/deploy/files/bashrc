@@ -1,0 +1,57 @@
+# .bashrc
+
+# User specific aliases and functions
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+alias ll='ls -l'
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# pip warning ignore
+export PIP_ROOT_USER_ACTION=ignore
+export PIP_DISABLE_PIP_VERSION_CHECK=1
+
+# node build env for mgr/dashboard
+export NODE_MIRROR="https://npmmirror.com/mirrors/node"
+export NPM_REGISTRY="https://registry.npmmirror.com"
+
+# enable gcc-toolset-11
+source scl_source enable gcc-toolset-11
+
+# git proxy cmds
+lsgitproxy() {
+    echo "cmd: git proxy cmd."
+    echo "    1. setgitproxy: enable github proxy of https://mirror.ghproxy.com/"
+    echo "    2. delgitproxy: disable github proxy of https://mirror.ghproxy.com/"
+    echo ""
+}
+setgitproxy() {
+    delgitproxy
+    git config --global url."https://mirror.ghproxy.com/https://github.com/".insteadOf https://github.com/
+    echo "set github proxy: $(git config --global --get-regexp '^url.*insteadof$')"
+}
+delgitproxy() {
+    proxies=$(git config --global --get-regexp '^url.*insteadof$' | awk -F ' ' '{print $1}')
+    if test ! -z "$proxies"; then
+        for proxy in "${proxies[@]}"; do
+            key=$proxy
+            val=$(git config --global --get $key)
+            git config --global --unset $key
+            echo "delete github proxy: $key $val"
+        done
+    fi
+}
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+    . /etc/bashrc
+fi

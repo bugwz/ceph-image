@@ -1,0 +1,97 @@
+[CentOS-8-Stream-AppStream]
+name=CentOS-8-Stream - AppStream - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos/8-stream/AppStream/$basearch/os/
+enabled=1
+gpgcheck=0
+priority=10
+
+[CentOS-8-Stream-BaseOS]
+name=CentOS-8-Stream - BaseOS - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos/8-stream/BaseOS/$basearch/os/
+enabled=1
+gpgcheck=0
+priority=10
+
+[CentOS-8-Stream-ContinuousRelease]
+name=CentOS-8-Stream - ContinuousRelease - aliyun
+baseurl=https://mirrors.aliyun.com/centos/8-stream/cr/$basearch/os/
+enabled=0
+gpgcheck=0
+priority=10
+
+[CentOS-8-Stream-Debuginfo]
+name=CentOS-8-Stream - Debuginfo - aliyun
+baseurl=https://mirrors.aliyun.com/centos-debuginfo/8/$basearch/
+enabled=0
+gpgcheck=0
+priority=10
+
+[CentOS-8-Stream-Devel]
+name=CentOS-8-Stream - Devel - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos/8-stream/Devel/$basearch/os/
+enabled=0
+gpgcheck=0
+priority=10
+
+[CentOS-8-Stream-Extras]
+name=CentOS-8-Stream - Extras - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos/8-stream/extras/$basearch/os/
+enabled=1
+gpgcheck=0
+priority=10
+
+[CentOS-8-Stream-FastTrack]
+name=CentOS-8-Stream - FastTrack - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos/8-stream/fasttrack/$basearch/os/
+enabled=0
+gpgcheck=0
+priority=10
+
+[CentOS-8-Stream-HighAvailability]
+name=CentOS-8-Stream - HighAvailability - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos/8-stream/HighAvailability/$basearch/os/
+enabled=0
+gpgcheck=0
+priority=10
+
+[CentOS-8-Stream-Plus]
+name=CentOS-8-Stream - Plus - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos/8-stream/centosplus/$basearch/os/
+enabled=0
+gpgcheck=0
+priority=10
+
+[CentOS-8-Stream-PowerTools]
+name=CentOS-8-Stream - PowerTools - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos/8-stream/PowerTools/$basearch/os/
+enabled=1
+gpgcheck=0
+priority=10
+
+[CentOS-8-Stream-BaseOS-Source]
+name=CentOS-8-Stream - BaseOS-Source - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos/8-stream/BaseOS/$basearch/Source/
+enabled=0
+gpgcheck=0
+priority=10
+
+[CentOS-8-Stream-AppStream-Source]
+name=CentOS-8-Stream - AppStream-Source - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos/8-stream/AppStream/Source/
+enabled=0
+gpgcheck=0
+priority=10
+
+[CentOS-8-Stream-Extras-Source]
+name=CentOS-8-Stream - Extras-Source - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos/8-stream/extras/Source/
+enabled=0
+gpgcheck=0
+priority=10
+
+[CentOS-8-Stream-Plus-Source]
+name=CentOS-8-Stream - Plus-Source - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos/8-stream/centosplus/Source/
+enabled=0
+gpgcheck=0
+priority=10
