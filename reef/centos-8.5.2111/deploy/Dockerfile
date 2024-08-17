@@ -31,7 +31,7 @@ RUN source /root/.bashrc \
     && cd /root/ \
     && git clone https://github.com/ceph/ceph-ansible.git \
     && cd /root/ceph-ansible \
-    && git checkout stable-6.0 \
+    && git checkout stable-8.0 \
     && pip install -r requirements.txt \
     && ansible-galaxy install -r requirements.yml \
     && mv /tmp/yml/* /root/ceph-ansible/group_vars/

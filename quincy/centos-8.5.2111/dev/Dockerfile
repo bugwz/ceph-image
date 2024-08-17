@@ -9,7 +9,7 @@ RUN rm -rf /etc/yum.repos.d/*.repo* \
     && dnf install -y kernel-headers zlib zlib-devel bzip2-devel openssl-devel \
        sqlite-devel readline-devel python2-devel python36-devel python38-devel python2-jinja2 \
        python3-jinja2 python38-jinja2 git bc doxygen nginx snappy csnappy csnappy-devel libffi \
-       libffi-devel sshpass createrepo jsonnet nodejs \
+       libffi-devel createrepo jsonnet nodejs \
     && dnf reinstall -y kernel-headers glibc-headers csnappy-devel snappy csnappy-devel rpm-build rpmdevtools \
     && rm -rf /etc/localtime \
     && ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
