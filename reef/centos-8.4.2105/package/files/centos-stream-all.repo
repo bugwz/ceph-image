@@ -1,97 +1,161 @@
 [CentOS-8-Stream-AppStream]
 name=CentOS-8-Stream - AppStream - aliyun,tsinghua,ustc
-baseurl=https://mirrors.aliyun.com/centos/8-stream/AppStream/$basearch/os/
+baseurl=https://mirrors.aliyun.com/centos-vault/8-stream/AppStream/$basearch/os/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-vault/8-stream/AppStream/$basearch/os/
+        https://mirrors.ustc.edu.cn/centos-vault/8-stream/AppStream/$basearch/os/
 enabled=1
 gpgcheck=0
 priority=10
 
 [CentOS-8-Stream-BaseOS]
 name=CentOS-8-Stream - BaseOS - aliyun,tsinghua,ustc
-baseurl=https://mirrors.aliyun.com/centos/8-stream/BaseOS/$basearch/os/
+baseurl=https://mirrors.aliyun.com/centos-vault/8-stream/BaseOS/$basearch/os/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-vault/8-stream/BaseOS/$basearch/os/
+        https://mirrors.ustc.edu.cn/centos-vault/8-stream/BaseOS/$basearch/os/
 enabled=1
-gpgcheck=0
-priority=10
-
-[CentOS-8-Stream-ContinuousRelease]
-name=CentOS-8-Stream - ContinuousRelease - aliyun
-baseurl=https://mirrors.aliyun.com/centos/8-stream/cr/$basearch/os/
-enabled=0
 gpgcheck=0
 priority=10
 
 [CentOS-8-Stream-Debuginfo]
 name=CentOS-8-Stream - Debuginfo - aliyun
-baseurl=https://mirrors.aliyun.com/centos-debuginfo/8/$basearch/
+baseurl=https://mirrors.aliyun.com/centos-debuginfo/8-stream/$basearch/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-vault/8-stream/$basearch/
+        https://mirrors.ustc.edu.cn/centos-vault/8-stream/$basearch/
 enabled=0
 gpgcheck=0
 priority=10
 
-[CentOS-8-Stream-Devel]
-name=CentOS-8-Stream - Devel - aliyun,tsinghua,ustc
-baseurl=https://mirrors.aliyun.com/centos/8-stream/Devel/$basearch/os/
-enabled=0
+[CentOS-8-Stream-Extras-Common]
+name=CentOS-8-Stream - Extras-Common - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos-vault/8-stream/extras/$basearch/extras-common/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-vault/8-stream/extras/$basearch/extras-common/
+        https://mirrors.ustc.edu.cn/centos-vault/8-stream/extras/$basearch/extras-common/
+enabled=1
 gpgcheck=0
 priority=10
 
 [CentOS-8-Stream-Extras]
 name=CentOS-8-Stream - Extras - aliyun,tsinghua,ustc
-baseurl=https://mirrors.aliyun.com/centos/8-stream/extras/$basearch/os/
+baseurl=https://mirrors.aliyun.com/centos-vault/8-stream/extras/$basearch/os/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-vault/8-stream/extras/$basearch/os/
+        https://mirrors.ustc.edu.cn/centos-vault/8-stream/extras/$basearch/os/
 enabled=1
-gpgcheck=0
-priority=10
-
-[CentOS-8-Stream-FastTrack]
-name=CentOS-8-Stream - FastTrack - aliyun,tsinghua,ustc
-baseurl=https://mirrors.aliyun.com/centos/8-stream/fasttrack/$basearch/os/
-enabled=0
 gpgcheck=0
 priority=10
 
 [CentOS-8-Stream-HighAvailability]
 name=CentOS-8-Stream - HighAvailability - aliyun,tsinghua,ustc
-baseurl=https://mirrors.aliyun.com/centos/8-stream/HighAvailability/$basearch/os/
+baseurl=https://mirrors.aliyun.com/centos-vault/8-stream/HighAvailability/$basearch/os/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-vault/8-stream/HighAvailability/$basearch/os/
+        https://mirrors.ustc.edu.cn/centos-vault/8-stream/HighAvailability/$basearch/os/
 enabled=0
 gpgcheck=0
 priority=10
 
-[CentOS-8-Stream-Plus]
-name=CentOS-8-Stream - Plus - aliyun,tsinghua,ustc
-baseurl=https://mirrors.aliyun.com/centos/8-stream/centosplus/$basearch/os/
+[CentOS-8-Stream-NFV]
+name=CentOS-8-Stream - NFV - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos-vault/8-stream/NFV/$basearch/os/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-vault/8-stream/NFV/$basearch/os/
+        https://mirrors.ustc.edu.cn/centos-vault/8-stream/NFV/$basearch/os/
 enabled=0
 gpgcheck=0
 priority=10
 
 [CentOS-8-Stream-PowerTools]
 name=CentOS-8-Stream - PowerTools - aliyun,tsinghua,ustc
-baseurl=https://mirrors.aliyun.com/centos/8-stream/PowerTools/$basearch/os/
+baseurl=https://mirrors.aliyun.com/centos-vault/8-stream/PowerTools/$basearch/os/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-vault/8-stream/PowerTools/$basearch/os/
+        https://mirrors.ustc.edu.cn/centos-vault/8-stream/PowerTools/$basearch/os/
+enabled=1
+gpgcheck=0
+priority=10
+
+[CentOS-8-Stream-RealTime]
+name=CentOS-8-Stream - RealTime - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos-vault/8-stream/RT/$basearch/os/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-vault/8-stream/RT/$basearch/os/
+        https://mirrors.ustc.edu.cn/centos-vault/8-stream/RT/$basearch/os/
+enabled=1
+gpgcheck=0
+priority=10
+
+[CentOS-8-Stream-ResilientStorage]
+name=CentOS-8-Stream - ResilientStorage - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos-vault/8-stream/ResilientStorage/$basearch/os/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-vault/8-stream/ResilientStorage/$basearch/os/
+        https://mirrors.ustc.edu.cn/centos-vault/8-stream/ResilientStorage/$basearch/os/
 enabled=1
 gpgcheck=0
 priority=10
 
 [CentOS-8-Stream-BaseOS-Source]
 name=CentOS-8-Stream - BaseOS-Source - aliyun,tsinghua,ustc
-baseurl=https://mirrors.aliyun.com/centos/8-stream/BaseOS/$basearch/Source/
+baseurl=https://mirrors.aliyun.com/centos-vault/8-stream/BaseOS/$basearch/Source/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-vault/8-stream/BaseOS/$basearch/Source/
+        https://mirrors.ustc.edu.cn/centos-vault/8-stream/BaseOS/$basearch/Source/
 enabled=0
 gpgcheck=0
 priority=10
 
 [CentOS-8-Stream-AppStream-Source]
 name=CentOS-8-Stream - AppStream-Source - aliyun,tsinghua,ustc
-baseurl=https://mirrors.aliyun.com/centos/8-stream/AppStream/Source/
+baseurl=https://mirrors.aliyun.com/centos-vault/8-stream/AppStream/Source/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-vault/8-stream/AppStream/Source/
+        https://mirrors.ustc.edu.cn/centos-vault/8-stream/AppStream/Source/
+enabled=0
+gpgcheck=0
+priority=10
+
+[CentOS-8-Stream-PowerTools-Source]
+name=CentOS-8-Stream - PowerTools-Source - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos-vault/8-stream/PowerTools/Source/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-vault/8-stream/PowerTools/Source/
+        https://mirrors.ustc.edu.cn/centos-vault/8-stream/PowerTools/Source/
 enabled=0
 gpgcheck=0
 priority=10
 
 [CentOS-8-Stream-Extras-Source]
 name=CentOS-8-Stream - Extras-Source - aliyun,tsinghua,ustc
-baseurl=https://mirrors.aliyun.com/centos/8-stream/extras/Source/
+baseurl=https://mirrors.aliyun.com/centos-vault/8-stream/extras/Source/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-vault/8-stream/extras/Source/
+        https://mirrors.ustc.edu.cn/centos-vault/8-stream/extras/Source/
 enabled=0
 gpgcheck=0
 priority=10
 
-[CentOS-8-Stream-Plus-Source]
-name=CentOS-8-Stream - Plus-Source - aliyun,tsinghua,ustc
-baseurl=https://mirrors.aliyun.com/centos/8-stream/centosplus/Source/
+[CentOS-8-Stream-HighAvailability-Source]
+name=CentOS-8-Stream - HighAvailability-Source - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos-vault/8-stream/HighAvailability/Source/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-vault/8-stream/HighAvailability/Source/
+        https://mirrors.ustc.edu.cn/centos-vault/8-stream/HighAvailability/Source/
+enabled=0
+gpgcheck=0
+priority=10
+
+[CentOS-8-Stream-RealTime-Source]
+name=CentOS-8-Stream - RealTime-Source - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos-vault/8-stream/RT/Source/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-vault/8-stream/RT/Source/
+        https://mirrors.ustc.edu.cn/centos-vault/8-stream/RT/Source/
+enabled=0
+gpgcheck=0
+priority=10
+
+[CentOS-8-Stream-ResilientStorage-Source]
+name=CentOS-8-Stream - ResilientStorage-Source - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos-vault/8-stream/ResilientStorage/Source/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-vault/8-stream/ResilientStorage/Source/
+        https://mirrors.ustc.edu.cn/centos-vault/8-stream/ResilientStorage/Source/
+enabled=0
+gpgcheck=0
+priority=10
+
+[CentOS-8-Stream-NFV-Source]
+name=CentOS-8-Stream - NFV-Source - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos-vault/8-stream/NFV/Source/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-vault/8-stream/NFV/Source/
+        https://mirrors.ustc.edu.cn/centos-vault/8-stream/NFV/Source/
 enabled=0
 gpgcheck=0
 priority=10
