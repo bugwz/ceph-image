@@ -12,8 +12,8 @@ eval "$(pyenv init -)"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 
 # pip warning ignore
 export PIP_ROOT_USER_ACTION=ignore
@@ -22,6 +22,7 @@ export PIP_DISABLE_PIP_VERSION_CHECK=1
 # node build env for mgr/dashboard
 export NODE_MIRROR="https://npmmirror.com/mirrors/node"
 export NPM_REGISTRY="https://registry.npmmirror.com"
+export CYPRESS_DOWNLOAD_PATH_TEMPLATE="https://registry.npmmirror.com/-/binary/cypress/\${version}/\${platform}-\${arch}/cypress.zip"
 
 # git proxy cmds
 lsgitproxy() {
@@ -45,6 +46,24 @@ delgitproxy() {
             echo "delete github proxy: $key $val"
         done
     fi
+}
+
+# set/unset ceph dep mirror
+setcephdepmirror() {
+    sed -i 's/https:\/\/registry.npmjs.org/https:\/\/registry.npmmirror.com/g' \
+        /root/ceph/src/pybind/mgr/dashboard/frontend/package-lock.json || echo 0
+    sed -i 's/https:\/\/boostorg.jfrog.io\/artifactory\/main\/release\/\$boost_version\/source/https:\/\/mirrors.aliyun.com\/blfs\/conglomeration\/boost/g' \
+        /root/ceph/make-dist || echo 0
+    sed -i 's/https:\/\/boostorg.jfrog.io\/artifactory\/main\/release\/\$boost_version\/source/https:\/\/mirrors.aliyun.com\/blfs\/conglomeration\/boost/g' \
+        /root/ceph/cmake/modules/BuildBoost.cmake || echo 0
+}
+unsetcephdepmirror() {
+    sed -i 's/https:\/\/registry.npmmirror.com/https:\/\/registry.npmjs.org/g' \
+        /root/ceph/src/pybind/mgr/dashboard/frontend/package-lock.json || echo 0
+    sed -i 's/https:\/\/mirrors.aliyun.com\/blfs\/conglomeration\/boost/https:\/\/boostorg.jfrog.io\/artifactory\/main\/release\/\$boost_version\/source/g' \
+        /root/ceph/make-dist || echo 0
+    sed -i 's/https:\/\/mirrors.aliyun.com\/blfs\/conglomeration\/boost/https:\/\/boostorg.jfrog.io\/artifactory\/main\/release\/\$boost_version\/source/g' \
+        /root/ceph/cmake/modules/BuildBoost.cmake || echo 0
 }
 
 # Source global definitions
