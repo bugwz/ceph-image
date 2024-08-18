@@ -22,7 +22,7 @@ export PIP_DISABLE_PIP_VERSION_CHECK=1
 # node build env for mgr/dashboard
 export NODE_MIRROR="https://npmmirror.com/mirrors/node"
 export NPM_REGISTRY="https://registry.npmmirror.com"
-export CYPRESS_DOWNLOAD_PATH_TEMPLATE="https://registry.npmmirror.com/-/binary/cypress/\${version}/\${platform}-\${arch}/cypress.zip"
+export CYPRESS_DOWNLOAD_PATH_TEMPLATE="https://registry.npmmirror.com/-/binary/cypress/9.7.0/\${platform}-\${arch}/cypress.zip"
 
 # git proxy cmds
 lsgitproxy() {
