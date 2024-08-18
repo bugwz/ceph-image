@@ -1,6 +1,6 @@
 <div align="center"><a name="readme-top"></a>
 
-<img src="./static/logo.png" width="15%"/>
+<img src="./_/logo.png" width="15%"/>
 
 # Ceph-Image
 
