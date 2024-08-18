@@ -1,0 +1,107 @@
+[EPEL-Modular]
+name=CentOS-8-EPEL - EPEL-Modular - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/epel/$releasever/Modular/$basearch
+        https://mirrors.tuna.tsinghua.edu.cn/epel/$releasever/Modular/$basearch
+        https://mirrors.ustc.edu.cn/epel/$releasever/Modular/$basearch
+enabled=1
+gpgcheck=0
+priority=1
+
+[EPEL-Modular-DebugInfo]
+name=CentOS-8-EPEL - EPEL-Modular-DebugInfo - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/epel/$releasever/Modular/$basearch/debug
+        https://mirrors.tuna.tsinghua.edu.cn/epel/$releasever/Modular/$basearch/debug
+        https://mirrors.ustc.edu.cn/epel/$releasever/Modular/$basearch/debug
+enabled=0
+gpgcheck=0
+priority=1
+
+[EPEL-Modular-Source]
+name=CentOS-8-EPEL - EPEL-Modular-Source - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/epel/$releasever/Modular/SRPMS
+        https://mirrors.tuna.tsinghua.edu.cn/epel/$releasever/Modular/SRPMS
+        https://mirrors.ustc.edu.cn/epel/$releasever/Modular/SRPMS
+enabled=0
+gpgcheck=0
+priority=1
+
+[EPEL-Testing-Modular]
+name=CentOS-8-EPEL - EPEL-Testing-Modular - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/epel/testing/$releasever/Modular/$basearch
+        https://mirrors.tuna.tsinghua.edu.cn/epel/testing/$releasever/Modular/$basearch
+        https://mirrors.ustc.edu.cn/epel/testing/$releasever/Modular/$basearch
+enabled=0
+gpgcheck=0
+priority=1
+
+[EPEL-Testing-Modular-DebugInfo]
+name=CentOS-8-EPEL - EPEL-Testing-Modular-DebugInfo - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/epel/testing/$releasever/Modular/$basearch/debug
+        https://mirrors.tuna.tsinghua.edu.cn/epel/testing/$releasever/Modular/$basearch/debug
+        https://mirrors.ustc.edu.cn/epel/testing/$releasever/Modular/$basearch/debug
+enabled=0
+gpgcheck=0
+priority=1
+
+[EPEL-Testing-Modular-Source]
+name=CentOS-8-EPEL - EPEL-Testing-Modular-Source - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/epel/testing/$releasever/Modular/SRPMS
+        https://mirrors.tuna.tsinghua.edu.cn/epel/testing/$releasever/Modular/SRPMS
+        https://mirrors.ustc.edu.cn/epel/testing/$releasever/Modular/SRPMS
+enabled=0
+gpgcheck=0
+priority=1
+
+[EPEL-Testing]
+name=CentOS-8-EPEL - EPEL-Testing - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/epel/testing/$releasever/Everything/$basearch
+        https://mirrors.tuna.tsinghua.edu.cn/epel/testing/$releasever/Everything/$basearch
+        https://mirrors.ustc.edu.cn/epel/testing/$releasever/Everything/$basearch
+enabled=0
+gpgcheck=0
+priority=1
+
+[EPEL-Testing-DebugInfo]
+name=CentOS-8-EPEL - EPEL-Testing-DebugInfo - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/epel/testing/$releasever/Everything/$basearch/debug
+        https://mirrors.tuna.tsinghua.edu.cn/epel/testing/$releasever/Everything/$basearch/debug
+        https://mirrors.ustc.edu.cn/epel/testing/$releasever/Everything/$basearch/debug
+enabled=0
+gpgcheck=0
+priority=1
+
+[EPEL-Testing-Source]
+name=CentOS-8-EPEL - EPEL-Testing-Source - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/epel/testing/$releasever/Everything/SRPMS
+        https://mirrors.tuna.tsinghua.edu.cn/epel/testing/$releasever/Everything/SRPMS
+        https://mirrors.ustc.edu.cn/epel/testing/$releasever/Everything/SRPMS
+enabled=0
+gpgcheck=0
+priority=1
+
+[EPEL]
+name=CentOS-8-EPEL - EPEL - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/epel/$releasever/Everything/$basearch
+        https://mirrors.tuna.tsinghua.edu.cn/epel/$releasever/Everything/$basearch
+        https://mirrors.ustc.edu.cn/epel/$releasever/Everything/$basearch
+enabled=1
+gpgcheck=0
+priority=1
+
+[EPEL-Debug]
+name=CentOS-8-EPEL - EPEL-Debug - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/epel/$releasever/Everything/$basearch/debug
+        https://mirrors.tuna.tsinghua.edu.cn/epel/$releasever/Everything/$basearch/debug
+        https://mirrors.ustc.edu.cn/epel/$releasever/Everything/$basearch/debug
+enabled=0
+gpgcheck=0
+priority=1
+
+[EPEL-Source]
+name=CentOS-8-EPEL - EPEL-Source - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/epel/$releasever/Everything/SRPMS
+        https://mirrors.tuna.tsinghua.edu.cn/epel/$releasever/Everything/SRPMS
+        https://mirrors.ustc.edu.cn/epel/$releasever/Everything/SRPMS
+enabled=0
+gpgcheck=0
+priority=1
