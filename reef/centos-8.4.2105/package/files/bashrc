@@ -58,7 +58,7 @@ setcephdepmirror() {
         /root/ceph/src/pybind/mgr/dashboard/frontend/package-lock.json || echo 0
     sed -i 's/https:\/\/boostorg.jfrog.io\/artifactory\/main\/release\/\$boost_version\/source/https:\/\/mirrors.aliyun.com\/blfs\/conglomeration\/boost/g' \
         /root/ceph/make-dist || echo 0
-    sed -i 's/https:\/\/boostorg.jfrog.io\/artifactory\/main\/release\/\$boost_version\/source/https:\/\/mirrors.aliyun.com\/blfs\/conglomeration\/boost/g' \
+    sed -i 's/https:\/\/boostorg.jfrog.io\/artifactory\/main\/release\/\${boost_version}\/source/https:\/\/mirrors.aliyun.com\/blfs\/conglomeration\/boost/g' \
         /root/ceph/cmake/modules/BuildBoost.cmake || echo 0
 }
 unsetcephdepmirror() {
@@ -66,7 +66,7 @@ unsetcephdepmirror() {
         /root/ceph/src/pybind/mgr/dashboard/frontend/package-lock.json || echo 0
     sed -i 's/https:\/\/mirrors.aliyun.com\/blfs\/conglomeration\/boost/https:\/\/boostorg.jfrog.io\/artifactory\/main\/release\/\$boost_version\/source/g' \
         /root/ceph/make-dist || echo 0
-    sed -i 's/https:\/\/mirrors.aliyun.com\/blfs\/conglomeration\/boost/https:\/\/boostorg.jfrog.io\/artifactory\/main\/release\/\$boost_version\/source/g' \
+    sed -i 's/https:\/\/mirrors.aliyun.com\/blfs\/conglomeration\/boost/https:\/\/boostorg.jfrog.io\/artifactory\/main\/release\/\${boost_version}\/source/g' \
         /root/ceph/cmake/modules/BuildBoost.cmake || echo 0
 }
 
