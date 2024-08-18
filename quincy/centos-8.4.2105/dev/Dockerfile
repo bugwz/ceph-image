@@ -11,7 +11,7 @@ RUN rm -rf /etc/yum.repos.d/*.repo* \
        sqlite-devel readline-devel python2-devel python36-devel python38-devel python2-jinja2 \
        python3-jinja2 python38-jinja2 git bc doxygen nginx snappy csnappy csnappy-devel libffi \
        libffi-devel createrepo jsonnet nodejs wget xz xz-devel libmodulemd-2.13.0 glibc-common \
-       glibc-langpack-en \
+       glibc-langpack-en glibc-langpack-zh \
     && dnf reinstall -y kernel-headers glibc-headers csnappy-devel snappy csnappy-devel rpm-build rpmdevtools \
     && rm -rf /etc/localtime \
     && ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
