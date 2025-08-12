@@ -36,6 +36,7 @@ The currently supported Ceph versions are:
 - Quincy
 - Reef
 - Squid
+- Tentacle
 
 Tested versions are:
 
@@ -43,5 +44,6 @@ Tested versions are:
 - v17.2.7
 - v18.2.4
 - v19.2.1
+- v20.3.0
 
 ---
