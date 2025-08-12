@@ -1,0 +1,125 @@
+[highavailability]
+name=CentOS Stream $releasever - HighAvailability - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos-stream/9-stream/HighAvailability/x86_64/os/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-stream/9-stream/HighAvailability/x86_64/os/
+        https://mirrors.ustc.edu.cn/centos-stream/9-stream/HighAvailability/x86_64/os/
+enabled=0
+gpgcheck=0
+priority=1
+
+[highavailability-debuginfo]
+name=CentOS Stream $releasever - HighAvailability - Debug - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos-stream/9-stream/HighAvailability/x86_64/debug/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-stream/9-stream/HighAvailability/x86_64/debug/
+        https://mirrors.ustc.edu.cn/centos-stream/9-stream/HighAvailability/x86_64/debug/
+enabled=0
+gpgcheck=0
+priority=1
+
+[highavailability-source]
+name=CentOS Stream $releasever - HighAvailability - Source - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos-stream/9-stream/HighAvailability/source/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-stream/9-stream/HighAvailability/source/
+        https://mirrors.ustc.edu.cn/centos-stream/9-stream/HighAvailability/source/
+enabled=0
+gpgcheck=0
+priority=1
+
+[nfv]
+name=CentOS Stream $releasever - NFV - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos-stream/9-stream/NFV/x86_64/os/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-stream/9-stream/NFV/x86_64/os/
+        https://mirrors.ustc.edu.cn/centos-stream/9-stream/NFV/x86_64/os/
+enabled=0
+gpgcheck=0
+priority=1
+
+[nfv-debuginfo]
+name=CentOS Stream $releasever - NFV - Debug - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos-stream/9-stream/NFV/x86_64/debug/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-stream/9-stream/NFV/x86_64/debug/
+        https://mirrors.ustc.edu.cn/centos-stream/9-stream/NFV/x86_64/debug/
+enabled=0
+gpgcheck=0
+priority=1
+
+[nfv-source]
+name=CentOS Stream $releasever - NFV - Source - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos-stream/9-stream/NFV/source/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-stream/9-stream/NFV/source/
+        https://mirrors.ustc.edu.cn/centos-stream/9-stream/NFV/source/
+enabled=0
+gpgcheck=0
+priority=1
+
+[rt]
+name=CentOS Stream $releasever - RT - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos-stream/9-stream/RT/x86_64/os/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-stream/9-stream/RT/x86_64/os/
+        https://mirrors.ustc.edu.cn/centos-stream/9-stream/RT/x86_64/os/
+enabled=0
+gpgcheck=0
+priority=1
+
+[rt-debuginfo]
+name=CentOS Stream $releasever - RT - Debug - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos-stream/9-stream/RT/x86_64/debug/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-stream/9-stream/RT/x86_64/debug/
+        https://mirrors.ustc.edu.cn/centos-stream/9-stream/RT/x86_64/debug/
+enabled=0
+gpgcheck=0
+priority=1
+
+[rt-source]
+name=CentOS Stream $releasever - RT - Source - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos-stream/9-stream/RT/source/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-stream/9-stream/RT/source/
+        https://mirrors.ustc.edu.cn/centos-stream/9-stream/RT/source/
+enabled=0
+gpgcheck=0
+priority=1
+
+[resilientstorage]
+name=CentOS Stream $releasever - ResilientStorage - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos-stream/9-stream/ResilientStorage/x86_64/os/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-stream/9-stream/ResilientStorage/x86_64/os/
+        https://mirrors.ustc.edu.cn/centos-stream/9-stream/ResilientStorage/x86_64/os/
+enabled=0
+gpgcheck=0
+priority=1
+
+[resilientstorage-debuginfo]
+name=CentOS Stream $releasever - ResilientStorage - Debug - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos-stream/9-stream/ResilientStorage/x86_64/debug/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-stream/9-stream/ResilientStorage/x86_64/debug/
+        https://mirrors.ustc.edu.cn/centos-stream/9-stream/ResilientStorage/x86_64/debug/
+enabled=0
+gpgcheck=0
+priority=1
+
+[resilientstorage-source]
+name=CentOS Stream $releasever - ResilientStorage - Source - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos-stream/9-stream/ResilientStorage/source/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-stream/9-stream/ResilientStorage/source/
+        https://mirrors.ustc.edu.cn/centos-stream/9-stream/ResilientStorage/source/
+enabled=0
+gpgcheck=0
+priority=1
+
+[extras-common]
+name=CentOS Stream $releasever - Extras packages - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos-stream/SIGs/9-stream/extras/x86_64/extras-common/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-stream/SIGs/9-stream/extras/x86_64/extras-common/
+        https://mirrors.ustc.edu.cn/centos-stream/SIGs/9-stream/extras/x86_64/extras-common/
+enabled=1
+gpgcheck=0
+priority=1
+
+[extras-common-source]
+name=CentOS Stream $releasever - Extras packages - Source - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/centos-stream/SIGs/9-stream/extras/source/extras-common/
+        https://mirrors.tuna.tsinghua.edu.cn/centos-stream/SIGs/9-stream/extras/source/extras-common/
+        https://mirrors.ustc.edu.cn/centos-stream/SIGs/9-stream/extras/source/extras-common/
+enabled=0
+gpgcheck=0
+priority=1
