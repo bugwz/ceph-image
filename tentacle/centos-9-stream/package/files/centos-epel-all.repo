@@ -1,0 +1,131 @@
+[epel-cisco-openh264]
+name=Extra Packages for Enterprise Linux 9 openh264 (From Cisco) - x86_64
+baseurl=https://codecs.fedoraproject.org/openh264/epel/9/x86_64/os/
+enabled=1
+gpgcheck=0
+priority=1
+skip_if_unavailable=True
+
+[epel-cisco-openh264-debuginfo]
+name=Extra Packages for Enterprise Linux 9 openh264 (From Cisco) - x86_64 - Debug
+baseurl=https://codecs.fedoraproject.org/openh264/epel/9/x86_64/debug/
+enabled=0
+gpgcheck=0
+priority=1
+skip_if_unavailable=True
+
+[epel-cisco-openh264-source]
+name=Extra Packages for Enterprise Linux 9 openh264 (From Cisco) - x86_64 - Source
+baseurl=https://codecs.fedoraproject.org/openh264/epel/9/source/
+enabled=0
+gpgcheck=0
+priority=1
+skip_if_unavailable=True
+
+[epel-next-testing]
+name=Extra Packages for Enterprise Linux 9 - Next - Testing - x86_64 - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/epel/testing/next/9/Everything/x86_64/
+        https://mirrors.tuna.tsinghua.edu.cn/epel/testing/next/9/Everything/x86_64/
+        https://mirrors.ustc.edu.cn/epel/testing/next/9/Everything/x86_64/
+enabled=0
+gpgcheck=0
+priority=1
+
+[epel-next-testing-debuginfo]
+name=Extra Packages for Enterprise Linux 9 - Next - Testing - x86_64 - Debug - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/epel/testing/next/9/Everything/x86_64/debug/
+        https://mirrors.tuna.tsinghua.edu.cn/epel/testing/next/9/Everything/x86_64/debug/
+        https://mirrors.ustc.edu.cn/epel/testing/next/9/Everything/x86_64/debug/
+enabled=0
+gpgcheck=0
+priority=1
+
+[epel-next-testing-source]
+name=Extra Packages for Enterprise Linux 9 - Next - Testing - x86_64 - Source - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/epel/testing/next/9/Everything/source/
+        https://mirrors.tuna.tsinghua.edu.cn/epel/testing/next/9/Everything/source/
+        https://mirrors.ustc.edu.cn/epel/testing/next/9/Everything/source/
+enabled=0
+gpgcheck=0
+priority=1
+
+[epel-next]
+name=Extra Packages for Enterprise Linux 9 - Next - x86_64 - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/epel/next/9/Everything/x86_64/
+        https://mirrors.tuna.tsinghua.edu.cn/epel/next/9/Everything/x86_64/
+        https://mirrors.ustc.edu.cn/epel/next/9/Everything/x86_64/
+enabled=1
+gpgcheck=0
+priority=1
+
+[epel-next-debuginfo]
+name=Extra Packages for Enterprise Linux 9 - Next - x86_64 - Debug - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/epel/next/9/Everything/x86_64/debug/
+        https://mirrors.tuna.tsinghua.edu.cn/epel/next/9/Everything/x86_64/debug/
+        https://mirrors.ustc.edu.cn/epel/next/9/Everything/x86_64/debug/
+enabled=0
+gpgcheck=0
+priority=1
+
+[epel-next-source]
+name=Extra Packages for Enterprise Linux 9 - Next - x86_64 - Source - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/epel/next/9/Everything/source/
+        https://mirrors.tuna.tsinghua.edu.cn/epel/next/9/Everything/source/
+        https://mirrors.ustc.edu.cn/epel/next/9/Everything/source/
+enabled=0
+gpgcheck=0
+priority=1
+
+[epel-testing]
+name=Extra Packages for Enterprise Linux 9 - Testing - x86_64 - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/epel/testing/9/Everything/x86_64/
+        https://mirrors.tuna.tsinghua.edu.cn/epel/testing/9/Everything/x86_64/
+        https://mirrors.ustc.edu.cn/epel/testing/9/Everything/x86_64/
+enabled=0
+gpgcheck=0
+priority=1
+
+[epel-testing-debuginfo]
+name=Extra Packages for Enterprise Linux 9 - Testing - x86_64 - Debug - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/epel/testing/9/Everything/x86_64/debug/
+        https://mirrors.tuna.tsinghua.edu.cn/epel/testing/9/Everything/x86_64/debug/
+        https://mirrors.ustc.edu.cn/epel/testing/9/Everything/x86_64/debug/
+enabled=0
+gpgcheck=0
+priority=1
+
+[epel-testing-source]
+name=Extra Packages for Enterprise Linux 9 - Testing - x86_64 - Source - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/epel/testing/9/Everything/source/
+        https://mirrors.tuna.tsinghua.edu.cn/epel/testing/9/Everything/source/
+        https://mirrors.ustc.edu.cn/epel/testing/9/Everything/source/
+enabled=0
+gpgcheck=0
+priority=1
+
+[epel]
+name=Extra Packages for Enterprise Linux 9 - x86_64 - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/epel/9/Everything/x86_64/
+        https://mirrors.tuna.tsinghua.edu.cn/epel/9/Everything/x86_64/
+        https://mirrors.ustc.edu.cn/epel/9/Everything/x86_64/
+enabled=1
+gpgcheck=0
+priority=1
+
+[epel-debuginfo]
+name=Extra Packages for Enterprise Linux 9 - x86_64 - Debug - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/epel/9/Everything/x86_64/debug/
+        https://mirrors.tuna.tsinghua.edu.cn/epel/9/Everything/x86_64/debug/
+        https://mirrors.ustc.edu.cn/epel/9/Everything/x86_64/debug/
+enabled=0
+gpgcheck=0
+priority=1
+
+[epel-source]
+name=Extra Packages for Enterprise Linux 9 - x86_64 - Source - aliyun,tsinghua,ustc
+baseurl=https://mirrors.aliyun.com/epel/9/Everything/source/
+        https://mirrors.tuna.tsinghua.edu.cn/epel/9/Everything/source/
+        https://mirrors.ustc.edu.cn/epel/9/Everything/source/
+enabled=0
+gpgcheck=0
+priority=1

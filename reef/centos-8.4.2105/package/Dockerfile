@@ -51,6 +51,8 @@ RUN source /root/.bashrc \
        --define="_srcrpmdir /root/ceph/rpmbuild/SRPMS" \
        --define="_unpackaged_files_terminate_build 0" \
        ceph.spec --without selinux \
+    && createrepo /root/ceph/rpmbuild/RPMS/x86_64/ \
+    && createrepo /root/ceph/rpmbuild/RPMS/noarch/ \
     && rm -rf /usr/share/nginx/html/* \
     && mv /root/ceph/rpmbuild /usr/share/nginx/html/
 
